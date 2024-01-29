@@ -65,7 +65,7 @@ int main()
 		countryInorder(countryRoot);
 
 		printf("Unesite zemlju koju zelite pretraziti: ");
-		scanf("%s", enteredCountry);
+		scanf(" %s", enteredCountry);
 		printf("Unesite donju granicu stanovnistva: ");
 		scanf("%d", &eneteredPopulation);
 

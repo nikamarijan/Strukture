@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #define _CRT_SECURE_NO_WARNINGS 
@@ -145,7 +145,7 @@ int ReadFilecountry(countryPosition countryHead) {
 
         countryFilepointer = fopen(countryNameFile, "r");
 
-        while (fscanf(countryFilepointer, "%50[^,]%*c%s%*c", cityName, strPopulation) == 2) // %50[^,] ?ita dok ne nai?e na zarez, radi samo za str, u?itat str i pretvorit u int, float, double
+        while (fscanf(countryFilepointer, "%50[^,]%*c%s%*c", cityName, strPopulation) == 2) // %50[^,] čita dok ne naiđe na zarez, radi samo za str, učitat str i pretvorit u int, float, double
         {
             population = atof(strPopulation); // pretvara str u float, double, int (atoi)
 
